@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>Encriptador</title>
+</head>
+<body>
+   <header>
+    <img src="imagenes/Logo.png" alt="logo">
+
+   </header>
+   <main>
+    <section class="seccion-1">
+        
+        <textarea type="text" id="textoEncriptado" class="textarea" placeholder="Escribe tu texto aquí"></textarea>
+        <label class="advertencia" for="input-texto"> ⓘSolo letras minúsculas, sin acentos</label>
+      
+        
+        <div class="botones">
+            <button type="button"class="boton-encriptar" id="botonEncriptado">Encriptar</button>
+            <button type="button"class="boton-desencriptar" id="botonDesencriptado">Desencriptar</button>
+            
+        </div>
+    </section>
+    
+    <section class="seccion-2">
+        <div class="imagenes">
+        <img class= "muñeco "src="imagenes/Muñeco.png" alt="Muñeco">
+        </div>
+      
+        <div>
+       <textarea class="subtitulo" name="resultado" id="textoDesencriptado" cols="30" rows="10">No se ha encontrado ningún mensaje</textarea>
+        </div>
+       
+        
+        <button class="boton-copiar" type="button" id="botonCopiar">Copiar</button>
+    
+        
+    </section>
+
+   </main>
+   <footer>
+    &copyDulce Andrez|2023
+    <a href="https://www.facebook.com/dulcemaria.andrez?mibextid=LQQJ4d"><img class="logos" src="imagenes/logo-facebook-noir.png" alt="Ícono de Facebook"></a>
+    <a href="https://instagram.com/dulce.ag__?igshid=NTdlMDg3MTY="><img class="logos" src="imagenes/87390.png" alt="Ícono de Instagram"></a>
+    <a href="https://www.linkedin.com/in/dulce-andrez-6546901a0"><img class="logos" src="imagenes/images.jpg" alt="Ícono de Linkedin"></a>
+    
+   </footer>
+       
+</body>
+
+<script>
+    var btn = document.querySelector ("#botonEncriptado");
+    btn.onclick = encriptar;
+
+    var btn2 = document.querySelector ("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+
+    var btn3 = document.querySelector ("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+</html>
